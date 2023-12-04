@@ -27,3 +27,7 @@ end
 if dfhack_flags.module then
     return
 end
+
+print(('start time %d'):format(os.time(os.date("!*t"))))
+remove_bad_jobs()
+print(('end time %d'):format(os.time(os.date("!*t"))))
